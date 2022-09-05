@@ -1,0 +1,18 @@
+@import "../abstract/variables";
+@import "../abstract/base";
+
+#authentication {
+  @include welcome-and-authentication;
+
+  div {
+    h1 {
+      font-weight: bold;
+      font-size: 1rem;
+      color: $title-color;
+      margin-bottom: 1rem;
+    }
+    input {
+      margin-bottom: 3.625rem;
+    }
+  }
+}

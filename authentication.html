@@ -15,26 +15,21 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <div id="splash-screen" class="d-none">
-    <img src="./imgs/logo.svg" alt="Fruit Hub logo">
-  </div>
-
-  <main id="welcome">
+  <main id="authentication">
     <section class="banner">
-      <img src="./imgs/welcome.svg" alt="Cesta de frutas">
+      <img src="./imgs/authentication.svg" alt="Cesta de frutas">
     </section>
 
     <section class="content">
       <div>
-        <h1>Get The Freshest Fruit Salad Combo</h1>
-        <p>We deliver the best and freshest fruit salad in town. Order for a combo today!!!</p>
+        <h1>What is your first name?</h1>
+        <input type="text" placeholder="Your name" required>
       </div>
 
-      <button onclick="location.href='./authentication.html'" class="button">Let’s Continue</button>
+      <button onclick="login()" class="button">Start Ordering</button>
     </section>
 
+    <script src="./script/storage.js"></script>
   </main>
-
-  <script src="./script/splash-screen.js"></script>
 </body>
 </html>

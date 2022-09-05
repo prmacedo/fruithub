@@ -19,6 +19,50 @@ html, body {
   display: none;
 }
 
+.button {
+  width: 100%;
+  text-align: center;
+  height: 3.5rem;
+  background-color: #FFA451;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.625rem;
+  transition: 0.3s background-color;
+}
+.button:hover {
+  background-color: #F08626;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  border-radius: 0.625rem;
+  box-sizing: border-box;
+  color: rgba(194, 189, 189, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+  height: 3.5rem;
+  background-color: #F7F5F5;
+}
+input::-moz-placeholder {
+  color: rgba(194, 189, 189, 0.7);
+}
+input:-ms-input-placeholder {
+  color: rgba(194, 189, 189, 0.7);
+}
+input::placeholder {
+  color: rgba(194, 189, 189, 0.7);
+}
+input.error {
+  border: 1px solid #FF3B30;
+}
+
 #welcome {
   height: 100%;
   max-height: 100vh;
@@ -54,20 +98,37 @@ html, body {
   margin-bottom: 5rem;
 }
 
-.button {
-  width: 100%;
-  text-align: center;
-  height: 3.5rem;
-  background-color: #FFA451;
+html, body {
+  height: 100vh;
   font-family: "Poppins", sans-serif;
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 500;
-  border: none;
-  border-radius: 0.625rem;
-  transition: 0.3s background-color;
 }
-.button:hover {
-  background-color: #F08626;
-  cursor: pointer;
+
+#authentication {
+  height: 100%;
+  max-height: 100vh;
+}
+#authentication .banner {
+  height: 60%;
+  background-color: #FFA451;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem;
+}
+#authentication .banner img {
+  width: 100%;
+}
+#authentication .content {
+  height: 40%;
+  background-color: #FFFFFF;
+  padding: 2.5rem 1.5rem 0;
+}
+#authentication div h1 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #27214D;
+  margin-bottom: 1rem;
+}
+#authentication div input {
+  margin-bottom: 3.625rem;
 }/*# sourceMappingURL=style.css.map */
