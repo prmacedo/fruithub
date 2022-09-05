@@ -1,0 +1,22 @@
+@import "../abstract/variables";
+
+#welcome {
+  @include welcome-and-authorization;
+
+  .content {
+    div {
+      padding-right: 1.75rem;
+      h1 {
+        font-weight: bold;
+        font-size: 1rem;
+        color: $title-color;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1rem;
+        color: $text-color;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}

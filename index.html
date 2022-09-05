@@ -7,13 +7,33 @@
 
   <title>Fruit Hub</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <div id="splash-screen">
+  <div id="splash-screen" class="d-none">
     <img src="./imgs/logo.svg" alt="Fruit Hub logo">
   </div>
+
+  <main id="welcome">
+    <section class="banner">
+      <img src="./imgs/welcome.svg" alt="Cesta de frutas">
+    </section>
+
+    <section class="content">
+      <div>
+        <h1>Get The Freshest Fruit Salad Combo</h1>
+        <p>We deliver the best and freshest fruit salad in town. Order for a combo today!!!</p>
+      </div>
+
+      <button onclick="location.href='#'" class="button">Let’s Continue</button>
+    </section>
+
+  </main>
 
   <script src="./script/splash-screen.js"></script>
 </body>
