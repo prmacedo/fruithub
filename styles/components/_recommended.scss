@@ -1,0 +1,28 @@
+@import "../abstract/variables";
+
+#recommended {
+  margin-top: 2.25rem;
+  padding: 0 1.5rem;
+
+  h1 {
+    font-size: 1.125rem;
+    position: relative;
+    padding-bottom: 1rem;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      background-color: $primary;
+      height: 2px;
+      width: 3.5rem;
+    }
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

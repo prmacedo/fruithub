@@ -1,0 +1,53 @@
+@import "../abstract/variables";
+
+#categories {
+  margin-top: 2.5rem;
+
+  .titles {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color: $categorie-color;
+    padding: 0 1.5rem;
+
+    li{
+      padding-bottom: 1rem;
+      opacity: 0.4;
+      &:first-of-type {
+        opacity: 1;
+        position: relative;
+        color: $title-color;
+        &::before {
+          content: '';
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+
+          height: 2px;
+          width: 2.375rem;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
+  .cards-container {
+    overflow-x: auto;
+    &::-webkit-scrollbar{
+      width: 0;
+      height: 0;
+    }
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+
+      li {
+        &:first-of-type {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+}

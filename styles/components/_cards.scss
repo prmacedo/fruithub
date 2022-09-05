@@ -1,0 +1,62 @@
+@import "../abstract/variables";
+
+.cards {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1.5rem;
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 1.25rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 30px 60px $shadow-card;
+
+    position: relative;
+
+    .heart {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .combo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.75rem;
+    }
+
+    h2{
+      font-weight: 500;
+      font-size: 0.875rem;
+      white-space: nowrap;
+      letter-spacing: -1px;
+    }
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+
+      .currency-value {
+        color: $primary-dark;
+        font-weight: 500;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+
+      .add {
+        background-color: $primary-light;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

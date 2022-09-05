@@ -1,0 +1,33 @@
+@import "../abstract/variables";
+
+@mixin flex-columm {
+  display: flex;
+  flex-direction: column;
+}
+
+#home {
+  @include flex-columm;
+  main {
+    flex: 1;
+    @include flex-columm;
+    #categories {
+      flex: 1;
+      @include flex-columm;
+      .cards-container {
+        flex: 1;
+
+        li {
+          &:nth-of-type(1) {
+            background-color: $card-1;
+          }
+          &:nth-of-type(2) {
+            background-color: $card-2;
+          }
+          &:nth-of-type(3) {
+            background-color: $card-3;
+          }
+        }
+      }
+    }
+  }
+}
