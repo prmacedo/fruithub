@@ -5,6 +5,6 @@ function login() {
     input.classList.add("error");
   } else {
     localStorage.setItem("username", input.value);
-    location.href="";
+    location.href="./home.html";
   }
 }
