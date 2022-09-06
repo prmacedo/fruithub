@@ -351,4 +351,144 @@ html, body {
 }
 #home main #categories .cards-container li:nth-of-type(3) {
   background-color: #F1EFF6;
+}
+
+#basket {
+  background-color: #FFA451;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+#basket header {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  background-color: #FFFFFF;
+  border-radius: 6.25rem;
+  padding: 0.5rem 0.375rem;
+}
+#basket header a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #27214D;
+  text-decoration: none;
+}
+#basket main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#basket .img-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4rem 0 2rem;
+}
+#basket .img-container img {
+  width: 11rem;
+}
+#basket .food-info {
+  background-color: #FFFFFF;
+  flex: 1;
+  border-radius: 1rem 1rem 0 0;
+  padding: 2.5rem 1.5rem 1rem;
+}
+#basket .food-info h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #27214D;
+}
+#basket .food-info .unities {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #F3F3F3;
+}
+#basket .food-info .unities .qtd-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+#basket .food-info .unities .qtd-container .qtd-button {
+  border: none;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background-color: #FFF2E7;
+}
+#basket .food-info .unities .qtd-container .qtd {
+  font-size: 1.5rem;
+  color: #27214D;
+  font-weight: 400;
+}
+#basket .food-info .unities .price {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+#basket .food-info .unities .price span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #27214D;
+}
+#basket .food-info .food-ingredients {
+  border-bottom: 1px solid #F3F3F3;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0.875rem;
+}
+#basket .food-info .food-ingredients h2 {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #27214D;
+  position: relative;
+  padding-bottom: 1rem;
+}
+#basket .food-info .food-ingredients h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 3.5rem;
+  background-color: #FFA451;
+}
+#basket .food-info .food-ingredients ul {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+#basket .food-info .food-ingredients ul li {
+  white-space: nowrap;
+  background-color: #FAFAFA;
+  padding: 0.375rem 0.5rem;
+  color: #403E3E;
+  border-radius: 0.625rem;
+}
+#basket .food-info .message {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #333333;
+}
+#basket .food-info .buttons {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 3.75rem;
+}
+#basket .food-info .buttons .heart {
+  height: 3rem;
+  width: 3rem;
+  background-color: #FFF2E7;
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+#basket .food-info .buttons .heart img {
+  width: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

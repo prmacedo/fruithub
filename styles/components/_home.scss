@@ -1,10 +1,5 @@
 @import "../abstract/variables";
 
-@mixin flex-columm {
-  display: flex;
-  flex-direction: column;
-}
-
 #home {
   @include flex-columm;
   main {
