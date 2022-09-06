@@ -3,6 +3,26 @@
 html, body {
   height: 100vh;
   font-family: $font-family;
+
+  @media (max-height: 740px) {
+    font-size: 14px;
+  }
+
+  @media (width: 280px) {
+    font-size: 12px;
+  }
+
+  @media (width: 820px) and (height: 1180px) {
+    font-size: 24px;
+  }
+
+  @media (width: 768px) and (height: 1024px) {
+    font-size: 22px;
+  }
+
+  @media (width: 912px) and (height: 1368px) {
+    font-size: 28px;
+  }
 }
 
 @mixin welcome-and-authentication {
@@ -20,6 +40,7 @@ html, body {
 
     img {
       width: 100%;
+      max-height: 80%;
     }
   }
 
